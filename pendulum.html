@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>curve sketch</title>
+
+    <!-- Providing script file for the project-->
+    <script src="pendulum.js"></script>
+    <script src="pendulum_app.js" defer></script>
+    <style>
+        body{
+            background-color: tan;
+        }
+        .b{
+            width: 150px;
+            height: 30px;
+            background-color: silver;
+            margin-top: 15px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <canvas id="mycanvas" width="600" height="400" style="border: solid;background-color: steelblue;"></canvas>
+    </div>
+    <input type="button" value="SWING LEFT" onclick="show(0);" class="b">
+    <input type="button" value="REST" onclick="show(2);" class="b">
+    <input type="button" value="SWING RIGHT" onclick="show(1);" class="b">
+</body>
